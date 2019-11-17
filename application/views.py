@@ -6,6 +6,8 @@ def display1(request):
     text1=request.GET['text1']
     text2=request.GET['text2']
     if text1=='Admin':
+
+        
        if text2=='admin':
            return render(request,'display.html',{'text1':text1,'text2':text2})
        else :
